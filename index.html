@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
+  </head>
+  <body>
+    <center><h1>Hollywood Movies</h1></center>
+    <hr>
+    <div class="row">
+      <div class="column">
+        <img
+          src="https://cdn.glitch.global/d9e7399a-3897-4ae7-a524-f317c108ef68/barbie%20poster.png?v=1729339643598"
+          style="width: 100%"
+        />
+      </div>
+      <div class="column">
+        <img src="https://cdn.glitch.global/d9e7399a-3897-4ae7-a524-f317c108ef68/dp3%20poster.png?v=1729339912293" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="https://cdn.glitch.global/d9e7399a-3897-4ae7-a524-f317c108ef68/SMM%20poster.png?v=1729340107014" style="width: 100%" />
+      </div>
+      
+    </div>
+  </body>
+</html>
